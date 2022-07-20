@@ -189,6 +189,38 @@ footer h2{
 /*--------- tablet responsive -----------*/
 @media only screen and (max-width:925px) and (min-width:689px) {
    .container{
-    background-color: green;
+    width: 100%;
    } 
+   /* fixtures  */
+   .fixtures{
+    flex-direction: column;
+    width: 100%;
+    }
+    .container .fixtures aside{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #fff;
+    }
+    .container .fixtures aside button{
+        background-color: #fff;
+        padding: 15px 20px;
+        border: 1px solid rgba(8,5,5,0.1);
+        /* margin: 10px; */
+        border-radius: 10px;
+        color: black;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+    .fixtures .fixture{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container .fixtures .fixture .match{
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
 }

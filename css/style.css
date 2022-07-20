@@ -30,6 +30,12 @@ body{
 .m-3{
     margin-left: 3px;
 }
+.link-btn{
+    text-decoration: none;
+}
+.link-btn strong{
+    font-weight: bolder;
+}
 /* utility classes */
 /* banner */
 .banner{
@@ -71,7 +77,7 @@ body{
 }
 
 /* ===========side-bar========== */
-.blogs-section .toggle{
+.blogs-section aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,7 +88,11 @@ body{
     border-radius: 10px;
     width: 40%;
 }
-.blogs-section .toggle button{
+.blogs-section aside button a{
+    text-decoration: none;
+    color: rgb(8, 5, 5);
+}
+.blogs-section aside button{
     background-color: #fff;
     padding: 15px 20px;
     border: none;
@@ -159,9 +169,12 @@ footer h2{
     .blogs-section{
         flex-direction: column;
     }
-    .blogs-section .toggle{
+    .blogs-section aside{
         width: 90%;
         margin: 0 auto;
+    }
+    .blogs-section aside a{
+        text-align: center;
     }
     .blogs-section .blogs{
         grid-template-columns: repeat(1,1fr);
@@ -196,7 +209,7 @@ footer h2{
     .blogs-section{
         flex-direction: column;
     }
-    .blogs-section .toggle{
+    .blogs-section aside{
         width: 90%;
         margin: 0 auto;
         background-color: #fff;
@@ -207,7 +220,17 @@ footer h2{
         height: 40px;
         margin-bottom: 20px;
     }
-    .blogs-section .toggle button{
+    .blogs-section aside .link-btn{
+        background-color: #fff;
+        padding: 15px 20px;
+        border: 1 px solid black;
+        margin: 10px;
+        border-radius: 10px;
+        color: black;
+        font-size: 12px;
+        /* text-decoration: none; */
+    }
+    .blogs-section aside button{
         border: 1px solid gray;
         background-color: #faf9f6;
         text-align: center;
