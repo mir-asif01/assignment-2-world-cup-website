@@ -68,9 +68,9 @@ body{
 /*=========== blogs =================*/
 .blogs-section{
     display: flex;
-    /* align-items: center; */
-
 }
+
+/* ===========side-bar========== */
 .blogs-section .toggle{
     display: flex;
     flex-direction: column;
@@ -92,6 +92,7 @@ body{
     font-weight: bolder;
     font-size: 12px;
 }
+/* =============blog ===========*/
 .blogs-section .blogs{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -134,4 +135,48 @@ footer h2{
     margin: 15px;
     color: gray;
     font-size: 15px;
+}
+
+/* ----------responsive styles -----------*/
+/*--------mobile responsive style-------*/
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    /* banner */
+    .banner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner .banner-text{
+        width: 100%;
+        text-align: center;
+    }
+    .banner .banner-image{
+        width: 100%;
+    }
+    /* blogs */
+    .blogs-section{
+        flex-direction: column;
+    }
+    .blogs-section .toggle{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .blogs-section .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blogs-section .blogs .blog{
+        width: 100%;
+    }
+    /* footer */
+    footer{
+        width: 100%;
+        text-align: center;
+    }
+    footer .links ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
