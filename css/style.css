@@ -36,6 +36,12 @@ body{
 .link-btn strong{
     font-weight: bolder;
 }
+.blog-btn{
+    background-color: #3CCF4E;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
 /* utility classes */
 /* banner */
 .banner{
@@ -112,21 +118,27 @@ body{
 .blogs-section .blogs .blog{
     width: 200px;
     margin: 10px;
-    border: 1px solid gray;
+    border: 1px solid gainsboro;
     border-radius: 10px;
-    padding: 0;
+    padding: 3px;
+    background-color: #FEFBF6;
+}
+.blogs-section .blogs .blog:hover{
+    box-shadow: 2px 2px 5px 1px gainsboro;
 }
 .blogs-section .blogs .blog .blog-info{
     width: 100%;
     padding: 5px;
 }
 .blogs-section .blogs .blog .blog-info p{
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: bolder;
 }
 .blogs-section .blogs .blog .blog-info .time-comment{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    font-weight: bolder;
 }
 /*-------------- special-button --------- */
 .special-btn{
@@ -171,6 +183,9 @@ footer h2{
 /* ----------responsive styles -----------*/
 /*--------mobile responsive style-------*/
 @media only screen and (max-width:688px){
+    body{
+        padding: 0px 2px;
+    }
     .container{
         width: 100%;
     }
@@ -199,10 +214,11 @@ footer h2{
     }
     .blogs-section .blogs{
         grid-template-columns: repeat(1,1fr);
+        margin: 0 auto;
     }
     .blogs-section .blogs .blog{
         width: 100%;
-        margin: 0px;
+        
         padding: 0px;
     }
     /* footer */
@@ -218,9 +234,9 @@ footer h2{
 }
 
 /*----------tablet responsive styles-----------*/
-@media only screen and (max-width:925px) and (min-width:689px) {
+@media only screen and (max-width:920px) and (min-width:689px) {
     .container{
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
     .banner{
@@ -237,7 +253,7 @@ footer h2{
         background-color: #fff;
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        margin: 0px;
+        margin: 0 auto;
         padding: 10px;
         height: 40px;
         margin-bottom: 20px;
@@ -262,6 +278,7 @@ footer h2{
     .blogs-section .blogs{
         grid-template-columns: repeat(2,1fr);
         margin: 0 auto;
+        width: 100%;
     }
     .blogs-section .blogs .blog{
         width: 90%;

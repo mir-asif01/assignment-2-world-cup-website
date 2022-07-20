@@ -14,6 +14,7 @@ body{
     border-radius: 30px;
     padding-left: 30px;
     margin-bottom: 50px;
+    align-items: center;
 }
 .banner .banner-text{
     padding: 15px 15px;
@@ -82,6 +83,7 @@ body{
     border-color: rgba(8,5,5,0.1);
     padding: 13px;
     border-radius: 8px;
+    background-color: #FEFBF6;
 }
 .fixture .match .flag{
     display: flex;
@@ -136,11 +138,11 @@ footer h2{
 /* --------------mobile responsive ----------*/
 @media only screen and (max-width:688px){
     .container{
-        width: 100%;
+        width: 90%;
     }
     /* banner */
     .banner{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         flex-direction: column;
         align-items: center;
@@ -158,6 +160,7 @@ footer h2{
     .fixtures{
         flex-direction: column;
         width: 100%;
+        margin: 0 auto;
     }
     .container .fixtures aside{
         width: 80%;
@@ -166,7 +169,7 @@ footer h2{
     .fixtures .fixture{
         grid-template-columns: repeat(1,1fr);
         width: 100%;
-        margin: 0;
+        margin: 0 auto;
         padding: 10px;
     }
     .container .fixtures .fixture .match{
@@ -187,7 +190,7 @@ footer h2{
 }
 
 /*--------- tablet responsive -----------*/
-@media only screen and (max-width:925px) and (min-width:689px) {
+@media only screen and (max-width:850px) and (min-width:689px) {
    .container{
     width: 100%;
    } 
