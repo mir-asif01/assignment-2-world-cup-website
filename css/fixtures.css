@@ -191,6 +191,10 @@ footer h2{
    .container{
     width: 100%;
    } 
+   /* banner  */
+   .banner{
+    align-items: center;
+   }
    /* fixtures  */
    .fixtures{
     flex-direction: column;
