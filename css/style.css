@@ -24,6 +24,12 @@ body{
     background-color: #3CCF4E;
     color: whitesmoke;
 }
+.m-l-10{
+    margin-left: 10px;
+}
+.m-3{
+    margin-left: 3px;
+}
 /* utility classes */
 /* banner */
 .banner{
@@ -57,12 +63,6 @@ body{
     margin-left: 7px;
     margin-top: 5px;
     font-size: smaller;
-}
-.m-l-10{
-    margin-left: 10px;
-}
-.m-3{
-    margin-left: 3px;
 }
 
 /*=========== blogs =================*/

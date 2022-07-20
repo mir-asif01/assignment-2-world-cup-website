@@ -1,48 +1,194 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
 .container{
+    width: 90%;
+    margin: 0 auto;
 }
-.image{
-    width: 100px;
-}
-/* ===match section=====*/
-.match-section{
+/*----------banner-------*/
+.banner{
     display: flex;
+    background-color: rgb(8, 5, 5);
+    border-radius: 30px;
+    padding-left: 30px;
+    margin-bottom: 50px;
 }
-.match-section .f-toggle{
+.banner .banner-text{
+    padding: 15px 15px;
+}
+.banner .banner-text h1{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bolder;
+}
+.banner .banner-text p{
+    font-size: 0.8rem;
+    color: #faf9f6;
+}
+.banner .btn{
+    border: none;
+    background-color: #3CCF4E;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 7px;
+}
+.banner .btn i{
+    margin-left: 7px;
+    margin-top: 5px;
+    font-size: smaller;
+}
+/*--------------------fixtures---------------------*/
+.fixtures{
+    display: flex;
+    margin: 40px 0px;
+}
+.fixtures aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(8, 5, 5);
     height: 200px;
     width: 170px;
-    background-color: rgb(8, 5, 5);
     padding: 17px;
     border-radius: 10px;
-    width: 40%;
+    width: 30%;
 }
-.match-section .f-toggle button{
+.fixture{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    grid-column-gap: 10px;
+    row-gap: 10px;
+    margin-left: 20px;
+}
+.fixtures aside button{
     background-color: #fff;
-    padding: 15px 10px;
+    padding: 15px 20px;
     border: none;
-    margin: 17px;
+    margin: 10px;
     border-radius: 10px;
     color: black;
     font-weight: bolder;
     font-size: 12px;
 }
-.match-section .fixtures{
-    width: 60%;
+.fixtures aside #active{
+    background-color: #3CCF4E;
 }
-.fixtures{
+.fixture .match{
+    border: 1px solid;
+    border-color: rgba(8,5,5,0.1);
+    padding: 13px;
+    border-radius: 8px;
+}
+.fixture .match .flag{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fixture .match .flag h4{
+    font-weight: 900;
+}
+.fixture .match .flag img{
+    width: 80px;
+}
+.fixture .match .info{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    text-align: center;
 }
-.fixtures .match{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    width: 200px;
+.fixture .match .info h4{
+    font-size: 15px;
+    font-weight: 900;
 }
-.fixtures .match .flags{
-    display: flex;
+.fixture .match .info p{
+    font-size: 12px;
+    font-weight: 900;
+}
+
+/*---------footer style--------- */
+footer{
+    background-color: rgb(8, 5, 5);
+    padding: 30px 20px;
+    width: 100%;
+}
+footer h2{
+    text-align: center;
+    color: white;
+}
+.links{
+    width: 90%;
+    margin: 0 auto;
+}
+.links ul{
+    display:flex;
+}
+.links ul li{
+    list-style: none;
+    margin: 15px;
+    color: gray;
+    font-size: 15px;
+}
+
+/*--------------- responsive styles---------------- */
+
+/* --------------mobile responsive ----------*/
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    /* banner */
+    .banner{
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .banner .banner-text{
+        width: 100%;
+        text-align: center;
+    }
+    .banner .banner-image img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* blogs */
+    .fixtures{
+        flex-direction: column;
+        width: 100%;
+    }
+    .container .fixtures aside{
+        width: 80%;
+        margin: 30px auto;
+    }
+    .fixtures .fixture{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    .container .fixtures .fixture .match{
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    /* footer */
+    footer{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    footer .links ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*--------- tablet responsive -----------*/
+@media only screen and (max-width:925px) and (min-width:689px) {
+   .container{
+    background-color: green;
+   } 
 }
