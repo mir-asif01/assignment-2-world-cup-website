@@ -50,6 +50,26 @@ body{
     border-radius: 30px;
     padding-left: 30px;
     margin-bottom: 50px;
+    animation: opacty 2s ease-in;
+}
+@keyframes opacty {
+    
+    0%{
+        opacity: 0.2;
+    }
+    25%{
+        opacity: 0.4;
+    }    
+    50%{
+        opacity: 0.6;
+    }     
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+    
 }
 .banner .banner-text{
     padding: 15px 15px;
@@ -172,6 +192,7 @@ footer h2{
 }
 .links ul{
     display:flex;
+    align-items: center;
 }
 .links ul li{
     list-style: none;
