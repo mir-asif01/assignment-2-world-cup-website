@@ -1,0 +1,137 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.container{
+    width: 85vw;
+    margin: 0 auto;
+}
+/* utility classes */
+.half-width{
+    width: 50%;
+}
+.full-width{
+    width: 100%;
+}
+.blog-btn{
+    padding: 5px 10px;
+    font-weight: bolder;
+}
+.blog-image-width{
+    width: 100%;
+}
+#active{
+    background-color: #3CCF4E;
+    color: whitesmoke;
+}
+/* utility classes */
+/* banner */
+.banner{
+    display: flex;
+    background-color: rgb(8, 5, 5);
+    border-radius: 30px;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+.banner .banner-text{
+    padding: 15px 15px;
+}
+.banner .banner-text h1{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bolder;
+}
+.banner .banner-text p{
+    font-size: 0.8rem;
+    color: #faf9f6;
+}
+.banner .btn{
+    border: none;
+    background-color: #3CCF4E;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 7px;
+}
+.banner .btn i{
+    margin-left: 7px;
+    margin-top: 5px;
+    font-size: smaller;
+}
+.m-l-10{
+    margin-left: 10px;
+}
+.m-3{
+    margin-left: 3px;
+}
+
+/*=========== blogs =================*/
+.blogs-section{
+    display: flex;
+    /* align-items: center; */
+
+}
+.blogs-section .toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(8, 5, 5);
+    height: 200px;
+    width: 170px;
+    padding: 17px;
+    border-radius: 10px;
+    width: 40%;
+}
+.blogs-section .toggle button{
+    background-color: #fff;
+    padding: 15px 20px;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.blogs-section .blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.blogs-section .blogs .blog{
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+.blogs-section .blogs .blog .blog-info{
+    width: 100%;
+}
+.blogs-section .blogs .blog .blog-info .time-comment{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/*========= footer==============*/
+
+footer{
+    background-color: rgb(8, 5, 5);
+    padding: 30px 20px;
+}
+footer h2{
+    text-align: center;
+    color: white;
+}
+.links{
+    width: 90%;
+    margin: 0 auto;
+}
+.links ul{
+    display:flex;
+}
+.links ul li{
+    list-style: none;
+    margin: 15px;
+    color: gray;
+    font-size: 15px;
+}
